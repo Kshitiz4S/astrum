@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
         
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag apptodo:v1.0
+        run: docker build -t apptodo:v1.0 .
